@@ -29,5 +29,3 @@ inc++;
 
 return (inc);
 }
-Footer
-
