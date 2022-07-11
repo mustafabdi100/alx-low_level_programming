@@ -14,8 +14,5 @@ while (*(src + inc) != '\0')
 inc++;
 }
 *(dest + inc) = '\0';
-return (des
-t);
+return (dest);
 }
-Footer
-
