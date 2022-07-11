@@ -16,3 +16,5 @@ else
 printf("%d", a[inc]);
 
 }
+printf("\n");
+}
