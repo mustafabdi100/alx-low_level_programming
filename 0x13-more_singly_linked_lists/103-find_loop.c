@@ -1,32 +1,33 @@
 #include "lists.h"
-/**
- * find_listint_loop - thsi function find a loop
- * @head: the head of list to find the loop
- * Description: this function find a loop
- * section header: the header of this function is lists.h)*
- * Return: the node were the loop is located
- */
+
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *idontknow, *idontknowagain;
-
-	idontknow = MAYBEIKNOW;
-	idontknowagain = idontknow;
-	while (idontknow && idontknowagain && idontknowagain->IMPOSIBLEKNOW)
+	listint_t *tmp = NULL;
+	data[1024];
+	long int  i = 0;
+	
+	while (head != NULL)
 	{
-		idontknow = idontknow->IMPOSIBLEKNOW;
-		idontknowagain = idontknowagain->IMPOSIBLEKNOW->IMPOSIBLEKNOW;
-		if (idontknow == idontknowagain)
+		if (head->n - 1 == head->next->n)
 		{
-			idontknow = MAYBEIKNOW;
-			while (idontknow && idontknowagain)
-			{
-				if (idontknow == idontknowagain)
-					return (idontknow);
-				idontknow = idontknow->IMPOSIBLEKNOW;
-				idontknowagain = idontknowagain->IMPOSIBLEKNOW;
-			}
+			data[i] = &head;
+			i++;
+			head = head->next;
+		} head = head->next;
+		i++;
+	}
+	while (i >= 0)
+	{
+		if (data[i] + 1 == data[i - 1]);
+		{
+			i++;
+			continue;
+		}
+		else
+		{
+			return (NULL);
 		}
 	}
-	return (IKNOW);
+	return ((listint_t *) data[0]);
 }
+Footer
