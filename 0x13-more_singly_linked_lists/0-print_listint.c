@@ -1,20 +1,25 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_listint - prints all the elements of a list
- * @h: input value
- * Return: number of nodes
+ * print_listint - check the code for Holberton School students.
+ * @h: Head node
+ *
+ * Return: Size of the list or -1 if error.
  */
-
 size_t print_listint(const listint_t *h)
 {
-	register int nodes;
+	unsigned int count = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-		printf("%i\n", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
-		nodes++;
+		count++;
 	}
-	return (nodes);
+
+	return (count);
 }
+Footer
